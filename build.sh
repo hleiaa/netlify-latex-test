@@ -73,7 +73,7 @@ fi
 
 export PATH="$TEXLIVE_BIN:$PATH"
 
-python "$TEXLIVEONFLY" -c latexmk -a "-g -xelatex -synctex=1 -interaction=nonstopmode" "$@"
+python "$TEXLIVEONFLY" -c latexmk -a "-g -pdf -synctex=1 -interaction=nonstopmode" "$@"
 
 mkdir -p dist
 cp *.pdf dist
